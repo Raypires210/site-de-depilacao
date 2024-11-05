@@ -42,3 +42,11 @@ h2{
     padding: 10px 10px;
     margin-right: 60px;
 }
+
+.text{
+    display: flex;
+    flex-direction: column;
+    margin-right: 50%;
+    gap: 10px;
+}
+
