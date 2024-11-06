@@ -50,6 +50,7 @@ h2{
     gap: 10px;
 }
 
+
 @media (max-width: 768px){
 
     ul{
@@ -60,6 +61,7 @@ h2{
     }
 
     li{
+        background-color: pink;
         font-size: 15px;
         padding-bottom: 5px;
     }
