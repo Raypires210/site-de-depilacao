@@ -92,6 +92,7 @@ nav a:hover{
 footer{
     background-color: darkgrey;
     padding: 20px;
+    overflow: hidden;
 }
 .whatsapp{
     position: fixed;
@@ -113,4 +114,13 @@ footer{
 .localizacao a{
     text-decoration: none;
     color:black;
+}
+
+.mapa{
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    margin:150px;
+    margin-top: -150px;
+
 }
