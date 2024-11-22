@@ -11,7 +11,7 @@ window.onload = () => {
     const botaoAvancar = document.getElementById("btnAvancar")
 
     const MostrarFoto = () => {
-        moldura.src = "imagem/" + fotos[indice]
+        moldura.src = "img/" + fotos[indice]
     }
 
     const automaticoFoto = () => {
