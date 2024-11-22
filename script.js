@@ -1,38 +1,60 @@
-const fotos = ["baner.PNG","buco.PNG"]
+var moldura
+var fotos
+var indice
+var temporizador
+var botaoVoltar
+var botaoAvancar
 
 const tempointervalo = 2000
 
-var indice = 0, temporizador;
+botaoVoltar = document.getElementById("btnVoltar");
+botaoAvancar = document.getElementById("btnAvancar");
+moldura = document.getElementById("moldura")
 
-window.onload = () => {
+indice = 0
 
-    const moldura = document.getElementById("moldura")
-    const botaoVoltar = document.getElementById("btnVoltar")
-    const botaoAvancar = document.getElementById("btnAvancar")
+fotos = ["baner.png", "mulher.PNG"]
 
-    const MostrarFoto = () => {
-        moldura.src = "imagem/" + fotos[indice]
+window.onload = inicio()
+
+function inicio() {
+   botaoAvancar.onclick=Avancarfoto
+   botaoVoltar.onclick=Voltarfoto
+   mostrafoto()
+   Automaticofoto()
+
+}
+
+function Avancarfoto() {
+    if(indice<fotos.length-1){
+        indice++
+    }
+    else{
+        indice=0
     }
 
-    const automaticoFoto = () => {
-        clearInterval(temporizador)
-        temporizador = setInterval(() => AvancarFoto(), tempointervalo)
-    }
+    mostrafoto()
+    clearInterval(temporizador)
+    Automaticofoto()
+}
 
-    const AvancarFoto = () => {
-        indice = (indice + 1) % fotos.length
-        MostrarFoto()
-        automaticoFoto()
+function Voltarfoto() {
+    if(indice >0)
+    {
+        indice--
     }
-
-    const VoltarFoto = () => {
-        indice = (indice - 1 + fotos.length) % fotos.length
-        MostrarFoto()
-        automaticoFoto()
+    else{
+        indice=fotos.length-1
     }
+    mostrafoto()
+    clearInterval(temporizador)
+    Automaticofoto()
+}
 
-    botaoAvancar.onclick = AvancarFoto
-    botaoVoltar.onclick = VoltarFoto
-    MostrarFoto()
-    AvancarFoto()
+function Automaticofoto(){
+    temporizador=setInterval(Avancarfoto,tempointervalo)
+}
+
+function mostrafoto() {
+    moldura.src = "img/" + fotos[indice]
 }
