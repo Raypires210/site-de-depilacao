@@ -7,36 +7,22 @@ var botaoAvancar
 
 const tempointervalo = 2000
 
-botaoVoltar = document.getElementById("btnVoltar");
-botaoAvancar = document.getElementById("btnAvancar");
-moldura = document.getElementById("moldura")
+var indice = 0, temporizador;
 
-indice = 0
+window.onload = () => {
 
-fotos = ["baner.png", "mulher.PNG"]
+    const moldura = document.getElementById("moldura")
+    const botaoVoltar = document.getElementById("btnVoltar")
+    const botaoAvancar = document.getElementById("btnAvancar")
 
-window.onload = inicio()
-
-function inicio() {
-   botaoAvancar.onclick=Avancarfoto
-   botaoVoltar.onclick=Voltarfoto
-   mostrafoto()
-   Automaticofoto()
-
-}
-
-function Avancarfoto() {
-    if(indice<fotos.length-1){
-        indice++
-    }
-    else{
-        indice=0
+    const MostrarFoto = () => {
+        moldura.src = "imagem/" + fotos[indice]
     }
 
-    mostrafoto()
-    clearInterval(temporizador)
-    Automaticofoto()
-}
+    const automaticoFoto = () => {
+        clearInterval(temporizador)
+        temporizador = setInterval(() => AvancarFoto(), tempointervalo)
+    }
 
 function Voltarfoto() {
     if(indice >0)
