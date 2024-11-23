@@ -187,41 +187,36 @@ h4 {
     font-size: 20px;
 }
 
-footer {
+footer{
     background-color: darkgrey;
     padding: 20px;
     overflow: hidden;
 }
 
-.whatsapp {
+.whatsapp{
     position: fixed;
     bottom: 20px;
     right: 20px;
     z-index: 1;
 }
 
-.contato a {
+.contato a{
     text-decoration: none;
     color: black;
 }
 
-.email a {
+.email a{
     text-decoration: none;
     color: black;
 }
 
-.localizacao a {
+.localizacao a{
     text-decoration: none;
     color:black;
 }
 
-.mapa {
-    display: flex;
-    justify-content: right;
-    align-items: right;
-    margin:150px;
-    margin-top: -150px;
-}
+
+
 
 #menu {
     color: rgb(69, 67, 67);
