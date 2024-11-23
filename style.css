@@ -126,15 +126,6 @@ footer{
     color:black;
 }
 
-.mapa{
-    display: flex;
-    justify-content: right;
-    align-items: right;
-    margin:150px;
-    margin-top: -150px;
-
-}
-
 @media screen and (max-width: 859px) {
 
     header {
