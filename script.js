@@ -58,3 +58,11 @@ function Automaticofoto(){
 function mostrafoto() {
     moldura.src = "img/" + fotos[indice]
 }
+
+
+// script.js
+document.getElementById("menu").addEventListener("click", function() {
+    document.getElementById("sidebar").classList.toggle("active");
+});
+
+
