@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: white;
+    background-color: rgb(234, 233, 233);
 }
 
 header {
@@ -49,26 +49,14 @@ nav a:hover{
 #moldura{
 	width: 100%; /* Largura sempre ocupa todo o carrossel */
     height: 100%; /* Altura fixa do carrossel */
-	object-fit: cover; /* Garante que a imagem preencha o espaço sem deformar */
-    display: block;
+    
 	transform: scale(0.8);
 }
 
 .carrossel {
     overflow: hidden;
     width: 100%;
-    height: 500px;
-    position: relative;
-    margin: 0 auto;
     max-width: 1250px;
-}
-
-
-.img-carrossel{
-	width: 50%;
-    flex-shrink: 0;
-    height: 100px;
-    object-fit: cover;
 }
 
 .grupoBotao{
@@ -77,6 +65,7 @@ nav a:hover{
 }
 
 .botao{
+	
 	margin: 5px;
 	padding: 4px;
 	background: #139DE0;
