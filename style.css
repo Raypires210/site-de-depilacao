@@ -193,6 +193,7 @@ h4 {
 footer {
     background-color: darkgrey;
     padding: 20px;
+    height: 58px;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -206,15 +207,21 @@ h5 {
 
 .whatsapp {
     display: flex;
-    position: fixed;
+    position: fixed; /* Mantém a imagem fixa durante a rolagem */
     bottom: -25px;
     z-index: 1;
+    width: 100%;  /* Ocupa toda a largura da tela */
+    justify-content: flex-end;
+   
+    
 }
 
 .img-zap {
-    display: flex;
-    width: 390px;
-    margin-left: 1070px;
+   
+        width: 390px; /* Tamanho fixo da imagem */
+        margin-left: auto;  /* Garante que a imagem fique à direita */
+        margin-right: -100px; 
+ 
 }
 
 .email a {
@@ -280,6 +287,7 @@ h5 {
 
 /* Mostrar a barra lateral quando o menu for clicado */
 .sidebar.active {
+    
     left: 0; /* Faz a barra lateral aparecer */
 }
 
@@ -310,6 +318,10 @@ h5 {
         padding: 0;
         margin-right: 30px;
         cursor: pointer;
+    }
+
+    .grupoBotao{
+        display: none;
     }
 }
 
