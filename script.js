@@ -5,7 +5,7 @@ var temporizador
 var botaoVoltar
 var botaoAvancar
 
-const tempointervalo = 2000
+const tempointervalo = 3000
 
 botaoVoltar = document.getElementById("btnVoltar");
 botaoAvancar = document.getElementById("btnAvancar");
