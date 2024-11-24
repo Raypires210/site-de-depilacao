@@ -190,7 +190,7 @@ h4 {
     font-size: 20px;
 }
 
-footer{
+footer {
     background-color: darkgrey;
     padding: 20px;
     overflow: hidden;
@@ -198,38 +198,37 @@ footer{
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    
 }
 
-h5{
+h5 {
     text-align: center;
 }
 
-.whatsapp{
+.whatsapp {
+    display: flex;
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: -25px;
     z-index: 1;
 }
 
+.img-zap {
+    display: flex;
+    width: 390px;
+    margin-left: 1070px;
+}
 
-
-
-.email a{
+.email a {
     text-decoration: none;
     color: black;
     margin: 45px;
 }
 
-.localizacao a{
+.localizacao a {
     text-decoration: none;
     color:black;
     margin: 45px;
     font-size: 14px;
 }
-
-
-
 
 #menu {
     color: rgb(69, 67, 67);
@@ -292,8 +291,18 @@ h5{
         align-items: center;
         justify-content:space-between;
     }
+
     nav {
         display: none; /* Oculta a barra de navegação */
+    }
+
+    .logo {
+        width: 250px;
+        margin-left: 30px;
+    }
+
+    h5{
+        padding: 5px;
     }
 
     #menu {
@@ -302,16 +311,6 @@ h5{
         margin-right: 30px;
         cursor: pointer;
     }
-
-    .logo {
-        width: 250px;
-        margin-left: 30px;
-    }
-    h5{
-        padding: 5px;
-      
-    }
-    
 }
 
     
