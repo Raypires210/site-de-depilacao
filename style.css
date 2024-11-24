@@ -194,6 +194,15 @@ footer{
     background-color: darkgrey;
     padding: 20px;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+h5{
+    text-align: center;
 }
 
 .whatsapp{
@@ -203,19 +212,20 @@ footer{
     z-index: 1;
 }
 
-.contato a{
-    text-decoration: none;
-    color: black;
-}
+
+
 
 .email a{
     text-decoration: none;
     color: black;
+    margin: 45px;
 }
 
 .localizacao a{
     text-decoration: none;
     color:black;
+    margin: 45px;
+    font-size: 14px;
 }
 
 
@@ -297,6 +307,11 @@ footer{
         width: 250px;
         margin-left: 30px;
     }
+    h5{
+        padding: 5px;
+      
+    }
+    
 }
 
     

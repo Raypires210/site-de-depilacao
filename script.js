@@ -59,21 +59,8 @@ function mostrafoto() {
     moldura.src = "img/" + fotos[indice]
 }
 
-//botao//
-
-function menuShow(){
-    let menu = document.querySelector("menu")
-    if(menu.classList.contains('open')) {
-       menu.classList.remove('open');
-    } else {
-       menu.classList.add('open')
-    }
-}
-
 
 // script.js
 document.getElementById("menu").addEventListener("click", function() {
     document.getElementById("sidebar").classList.toggle("active");
 });
-
-
